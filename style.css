@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif !important;
+  color: black !important;
+}
+h4 {
+  color: white !important;
+}
+#maincontainer {
+  max-width: 700px !important;
+}
+#graph {
+  max-width: 900px;
+}
+.linage {
+  fill: none;
+  stroke: #a8ebff;
+  &:hover {
+    stroke-width: 4px;
+    transition-duration: 200ms;
+  }
+}
+.marriage {
+  fill: none;
+  stroke: black;
+}
+.marriageNode {
+  background-color: black;
+  border-radius: 50%;
+}
+.man {
+  user-select: none;
+  background-color: lightblue;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent;
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  &:hover {
+    background-color: rgb(59, 107, 122);
+    color: white;
+    transition-duration: 200ms;
+  }
+}
+.woman {
+  user-select: none;
+  background-color: pink;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent;
+  box-sizing: border-box;
+  border-radius: 5px;
+  &:hover {
+    background-color: rgb(164, 108, 118);
+    color: white;
+    transition-duration: 200ms;
+  }
+}
+.emphasis {
+  font-style: italic;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+svg {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50px;
+  border-color: transparent;
+  background-color: rgb(23, 23, 23);
+}
+#grammar {
+  width: 260px !important;
+  user-select: none;
+}

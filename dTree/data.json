@@ -1,0 +1,120 @@
+[
+  {
+    "name": "assign",
+    "class": "woman",
+    "children": [
+      {
+        "name": "id",
+        "class": "man",
+        "children": [{ "name": "Q", "class": "man" }]
+      },
+      { "name": "=", "class": "man" },
+      {
+        "name": "expr",
+        "class": "man",
+        "children": [
+          {
+            "name": "expr",
+            "class": "man",
+            "children": [
+              {
+                "name": "expr",
+                "class": "man",
+                "children": [
+                  {
+                    "name": "id",
+                    "class": "man",
+                    "children": [{ "name": "A", "class": "man" }]
+                  }
+                ]
+              },
+              { "name": "+", "class": "man" },
+              {
+                "name": "expr",
+                "class": "man",
+                "children": [
+                  {
+                    "name": "id",
+                    "class": "man",
+                    "children": [{ "name": "B", "class": "man" }]
+                  }
+                ]
+              }
+            ]
+          },
+          { "name": "*", "class": "man" },
+          {
+            "name": "expr",
+            "class": "man",
+            "children": [
+              {
+                "name": "id",
+                "class": "man",
+                "children": [{ "name": "C", "class": "man" }]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "assign",
+    "class": "woman",
+    "children": [
+      {
+        "name": "id",
+        "class": "man",
+        "children": [{ "name": "Q", "class": "man" }]
+      },
+      { "name": "=", "class": "man" },
+      {
+        "name": "expr",
+        "class": "man",
+        "children": [
+          {
+            "name": "expr",
+            "class": "man",
+            "children": [
+              {
+                "name": "id",
+                "class": "man",
+                "children": [{ "name": "A", "class": "man" }]
+              }
+            ]
+          },
+          { "name": "+", "class": "man" },
+          {
+            "name": "expr",
+            "class": "man",
+            "children": [
+              {
+                "name": "expr",
+                "class": "man",
+                "children": [
+                  {
+                    "name": "id",
+                    "class": "man",
+                    "children": [{ "name": "B", "class": "man" }]
+                  }
+                ]
+              },
+              { "name": "*", "class": "man" },
+              {
+                "name": "expr",
+                "class": "man",
+                "children": [
+                  {
+                    "name": "id",
+                    "class": "man",
+                    "children": [{ "name": "C", "class": "man" }]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

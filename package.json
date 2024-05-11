@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "nearley": "^2.20.1"
+  },
+  "scripts": {
+    "gen-parse": "nearleyc grammar/grammar.ne -o grammar/grammar.js",
+    "parse": "node index",
+    "convert": "browserify index.js -o legit.js"
+  }
+}
