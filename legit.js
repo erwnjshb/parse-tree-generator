@@ -130,45 +130,52 @@ parseBtn.addEventListener("click", () => {
   let counter = 0;
   inputData;
   if (inputData != "") {
-    graphh.innerHTML = "";
-    parser.feed(inputData);
-    const parsed = parser.results;
-    const relationships = extractNames(parsed);
-    console.log(JSON.stringify(parsed));
-    if (parsed.length > 1) {
-      amb.textContent = `Ambiguous Parse Tree: ${parsed.length} Possible Parses`;
-      myGrammar.innerHTML = `
+    try {
+      graphh.innerHTML = "";
+      parser.feed(inputData);
+      const parsed = parser.results;
+      const relationships = extractNames(parsed);
+      console.log(JSON.stringify(parsed));
+      if (parsed.length > 1) {
+        amb.textContent = `Ambiguous Parse Tree: ${parsed.length} Possible Parses`;
+        myGrammar.innerHTML = `
       PRODUCTION <br>(LEFT TO RIGHT):<br><br>
       ${relationships[counter].replaceAll(",", "<br>")}
       `;
-      myGrammar.addEventListener("click", () => {
-        ++counter;
-        if (relationships.length - 1 >= counter) {
-          myGrammar.innerHTML = `
+        myGrammar.addEventListener("click", () => {
+          ++counter;
+          if (relationships.length - 1 >= counter) {
+            myGrammar.innerHTML = `
       PRODUCTION <br>(LEFT TO RIGHT):<br><br>
       ${relationships[counter].replaceAll(",", "<br>")}
       `;
-        } else if (amb.textContent == "Parse Tree is not Ambiguous") {
-          myGrammar.innerHTML = `
+          } else if (amb.textContent == "Parse Tree is not Ambiguous") {
+            myGrammar.innerHTML = `
       PRODUCTION <br>(LEFT TO RIGHT):<br><br>
       ${relationships[-1].replaceAll(",", "<br>")}
       `;
-        } else {
-          counter = 0;
-          myGrammar.innerHTML = `
+          } else {
+            counter = 0;
+            myGrammar.innerHTML = `
       PRODUCTION <br>(LEFT TO RIGHT):<br><br>
       ${relationships[counter].replaceAll(",", "<br>")}
       `;
-        }
-      });
-    } else {
-      amb.textContent = "Parse Tree is not Ambiguous";
-      myGrammar.innerHTML = `
+          }
+        });
+      } else {
+        amb.textContent = "Parse Tree is not Ambiguous";
+        myGrammar.innerHTML = `
       PRODUCTION <br>(LEFT TO RIGHT):<br><br>
       ${relationships[0].replaceAll(",", "<br>")}
       `;
+      }
+      dTree.init(parsed, option);
+    } catch (error) {
+      amb.innerHTML = error;
+      graphh.innerHTML = "";
+      myGrammar.innerHTML = "";
+      relationships = [];
     }
-    dTree.init(parsed, option);
   } else {
     amb.textContent = "Parser returned no results.";
     graphh.innerHTML = "";
@@ -637,7 +644,7 @@ parseBtn.addEventListener("click", () => {
             lines.push('Unexpected ' + tokenDisplay + '. I did not expect any more input. Here is the state of my parse table:\n');
             this.displayStateStack(lastColumn.states, lines);
         } else {
-            lines.push('Unexpected ' + tokenDisplay + '. Instead, I was expecting to see one of the following:\n');
+            lines.push('<br>Unexpected ' + tokenDisplay + '. <br>Instead, I was expecting to see one of the following:<br>\n');
             // Display a "state stack" for each expectant state
             // - which shows you how this state came to be, step by step.
             // If there is more than one derivation, we only display the first one.
@@ -650,7 +657,7 @@ parseBtn.addEventListener("click", () => {
                 var state = stateStack[0];
                 var nextSymbol = state.rule.symbols[state.dot];
                 var symbolDisplay = this.getSymbolDisplay(nextSymbol);
-                lines.push('A ' + symbolDisplay + ' based on:');
+                lines.push('A ' + symbolDisplay + ' based on:<br>');
                 this.displayStateStack(stateStack, lines);
             }, this);
         }
