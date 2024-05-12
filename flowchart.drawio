@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="35B0sRHs-RsYc0RQ1pV2" name="Page-1">
-        <mxGraphModel dx="757" dy="518" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1135" dy="1754" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -8,18 +8,18 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="2" value="START" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=2;fontStyle=0;fontFamily=Tahoma;fontSize=13;labelBackgroundColor=none;labelBorderColor=none;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="365" y="70" width="120" height="80" as="geometry"/>
+                    <mxGeometry x="365" y="-70" width="120" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="7" value="" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;fontStyle=0;fontFamily=Tahoma;fontSize=13;labelBackgroundColor=none;labelBorderColor=none;shadow=1;" parent="1" source="3" target="11" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="3" value="const inputData&lt;br style=&quot;font-size: 13px;&quot;&gt;const parser =&amp;nbsp; new nearley.Parser" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;strokeWidth=2;fontStyle=0;fontFamily=Tahoma;fontSize=13;labelBackgroundColor=none;labelBorderColor=none;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="311" y="200" width="229" height="60" as="geometry"/>
+                    <mxGeometry x="311" y="60" width="229" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="17" value="" style="edgeStyle=none;html=1;strokeWidth=2;fontStyle=0;fontFamily=Tahoma;fontSize=13;labelBackgroundColor=none;labelBorderColor=none;shadow=1;" parent="1" source="5" target="6" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="23" value="" style="edgeStyle=none;html=1;strokeWidth=2;fontStyle=0;fontFamily=Tahoma;fontSize=13;labelBackgroundColor=none;labelBorderColor=none;shadow=1;" edge="1" parent="1" source="5" target="22">
+                <mxCell id="35" value="" style="edgeStyle=none;sketch=0;html=1;shadow=1;labelBackgroundColor=none;labelBorderColor=none;strokeWidth=2;fontFamily=Tahoma;fontSize=13;" edge="1" parent="1" source="5" target="22">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="5" value="parsed.length &amp;gt; 1" style="rhombus;whiteSpace=wrap;html=1;rounded=0;shadow=1;strokeWidth=2;fontStyle=0;fontFamily=Tahoma;fontSize=13;labelBackgroundColor=none;labelBorderColor=none;" parent="1" vertex="1">
@@ -34,16 +34,18 @@
                     <mxGeometry x="110" y="410" width="180" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="9" value="END" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=2;fontStyle=0;fontFamily=Tahoma;fontSize=13;labelBackgroundColor=none;labelBorderColor=none;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="370" y="660" width="120" height="80" as="geometry"/>
+                    <mxGeometry x="365.5" y="760" width="120" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="13" value="" style="edgeStyle=none;html=1;strokeWidth=2;fontStyle=0;fontFamily=Tahoma;fontSize=13;labelBackgroundColor=none;labelBorderColor=none;shadow=1;" parent="1" source="11" target="5" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="32" value="" style="edgeStyle=none;sketch=0;html=1;shadow=1;labelBackgroundColor=none;labelBorderColor=none;strokeWidth=2;fontFamily=Tahoma;fontSize=13;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="11" target="31">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="425.5" y="240" as="targetPoint"/>
+                    </mxGeometry>
                 </mxCell>
                 <mxCell id="11" value="parser.feed(inputData)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontStyle=0;fontFamily=Tahoma;fontSize=13;labelBackgroundColor=none;labelBorderColor=none;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="341" y="290" width="169" height="60" as="geometry"/>
+                    <mxGeometry x="341" y="150" width="169" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="15" value="NO" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeWidth=2;fontStyle=0;fontFamily=Tahoma;fontSize=13;labelBackgroundColor=none;labelBorderColor=none;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="513" y="410" width="40" height="30" as="geometry"/>
+                    <mxGeometry x="425" y="500" width="40" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="16" value="YES" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeWidth=2;fontStyle=0;fontFamily=Tahoma;fontSize=13;labelBackgroundColor=none;labelBorderColor=none;shadow=1;" parent="1" vertex="1">
                     <mxGeometry x="300" y="410" width="50" height="30" as="geometry"/>
@@ -51,7 +53,7 @@
                 <mxCell id="20" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;fontStyle=0;fontFamily=Tahoma;fontSize=13;labelBackgroundColor=none;labelBorderColor=none;shadow=1;" parent="1" source="27" target="9" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="200" y="700"/>
+                            <mxPoint x="200" y="800"/>
                         </Array>
                         <mxPoint x="200" y="600" as="sourcePoint"/>
                     </mxGeometry>
@@ -60,20 +62,45 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="22" value="textContent = &quot;Not Ambiguous&lt;span style=&quot;font-size: 13px;&quot;&gt;&quot;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontStyle=0;fontFamily=Tahoma;fontSize=13;labelBackgroundColor=none;labelBorderColor=none;shadow=1;" vertex="1" parent="1">
-                    <mxGeometry x="570" y="410" width="160" height="60" as="geometry"/>
+                    <mxGeometry x="345" y="540" width="160" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="27" value="GENERATE ALL POSSIBLE &lt;br style=&quot;font-size: 13px;&quot;&gt;PARSE TREE" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;shadow=1;strokeWidth=2;fontStyle=0;fontFamily=Tahoma;fontSize=13;labelBackgroundColor=none;labelBorderColor=none;" vertex="1" parent="1">
                     <mxGeometry x="130" y="540" width="140" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="30" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;fontStyle=0;fontFamily=Tahoma;fontSize=13;labelBackgroundColor=none;labelBorderColor=none;shadow=1;" edge="1" parent="1" source="28" target="9">
+                <mxCell id="34" value="" style="edgeStyle=none;sketch=0;html=1;shadow=1;labelBackgroundColor=none;labelBorderColor=none;strokeWidth=2;fontFamily=Tahoma;fontSize=13;" edge="1" parent="1" source="28" target="9">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="GENERATE&amp;nbsp;&lt;br style=&quot;font-size: 13px;&quot;&gt;PARSE TREE" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;shadow=1;strokeWidth=2;fontStyle=0;fontFamily=Tahoma;fontSize=13;labelBackgroundColor=none;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="355" y="650" width="140" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="" style="edgeStyle=none;sketch=0;html=1;shadow=1;labelBackgroundColor=none;labelBorderColor=none;strokeWidth=2;fontFamily=Tahoma;fontSize=13;" edge="1" parent="1" source="31" target="5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" style="edgeStyle=none;sketch=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;shadow=1;labelBackgroundColor=none;labelBorderColor=none;strokeWidth=2;fontFamily=Tahoma;fontSize=13;" edge="1" parent="1" source="31" target="39">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="650" y="700"/>
+                            <mxPoint x="600" y="300"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="28" value="GENERATE&amp;nbsp;&lt;br style=&quot;font-size: 13px;&quot;&gt;PARSE TREE" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;shadow=1;strokeWidth=2;fontStyle=0;fontFamily=Tahoma;fontSize=13;labelBackgroundColor=none;labelBorderColor=none;" vertex="1" parent="1">
-                    <mxGeometry x="580" y="540" width="140" height="60" as="geometry"/>
+                <mxCell id="31" value="is it valid?" style="rhombus;whiteSpace=wrap;html=1;rounded=0;shadow=1;strokeWidth=2;fontStyle=0;fontFamily=Tahoma;fontSize=13;labelBackgroundColor=none;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="350.5" y="250" width="150" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="YES" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeWidth=2;fontStyle=0;fontFamily=Tahoma;fontSize=13;labelBackgroundColor=none;labelBorderColor=none;shadow=1;" vertex="1" parent="1">
+                    <mxGeometry x="375" y="350" width="50" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="NO" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeWidth=2;fontStyle=0;fontFamily=Tahoma;fontSize=13;labelBackgroundColor=none;labelBorderColor=none;shadow=1;" vertex="1" parent="1">
+                    <mxGeometry x="510" y="270" width="40" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" style="edgeStyle=none;sketch=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;shadow=1;labelBackgroundColor=none;labelBorderColor=none;strokeWidth=2;fontFamily=Tahoma;fontSize=13;" edge="1" parent="1" source="39" target="9">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="600" y="800"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="39" value="Display ERROR" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;shadow=1;strokeWidth=2;fontStyle=0;fontFamily=Tahoma;fontSize=13;labelBackgroundColor=none;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="530" y="540" width="140" height="60" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

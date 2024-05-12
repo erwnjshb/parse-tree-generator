@@ -54,15 +54,44 @@
       </div>
       <!-- AMBIGUITY -->
     </div>
-    <div class="container mt-5">
+    <div class="container mt-5 d-flex flex-column align-items-center">
       <!-- GRAPH -->
+
       <h4 id="ambd" class="text-center"></h4>
-      <div
-        class="container d-flex flex-row justify-content-start align-items-start"
-      >
-        <div id="graph" class="container mt-5"></div>
-        <h5 id="grammar" class="text-start mt-5 text-white"></h5>
-      </div>
+
+      <div id="graph" class="container mt-5 mb-5"></div>
+
+      <table id="production" class="table table-bordered table-dark">
+        <thead>
+          <tr>
+            <th scope="col" colspan="2" class="text-center">
+              Production Rules
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">assign</th>
+            <td>id = expr</td>
+          </tr>
+          <tr>
+            <th scope="row">expr</th>
+            <td>expr opt expr | ( expr ) | id | const</td>
+          </tr>
+          <tr>
+            <th scope="row">opt</th>
+            <td>+ | - | * | /</td>
+          </tr>
+          <tr>
+            <th scope="row">id</th>
+            <td>[A-Za-z]</td>
+          </tr>
+          <tr>
+            <th scope="row">const</th>
+            <td>[0-9]</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
     <!-- SCRIPT -->
     <script src="legit.js"></script>

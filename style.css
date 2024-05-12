@@ -77,3 +77,6 @@ svg {
   width: 260px !important;
   user-select: none;
 }
+#production {
+  max-width: 600px;
+}

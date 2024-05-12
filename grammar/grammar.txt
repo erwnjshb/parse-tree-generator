@@ -1,0 +1,16 @@
+start -> assign 
+assign -> id equal expr
+expr -> expr opt expr |
+    _ expr _ |
+    id |
+    const 
+_ -> "(" |
+     ")" 
+opt -> "+" |
+    "-" |
+    "*" |
+    "/" 
+equal -> "=" 
+id -> [A-Za-z] 
+const -> [0-9]
+

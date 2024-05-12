@@ -3,7 +3,7 @@ start
         {%
             (data) => ({
                 "name": "assign",
-                "class": "woman",
+                "class": "man",
                 "children": data[0]
                 
             })
@@ -19,40 +19,6 @@ assign
                 
             ])
         %}
-    # -> expr
-    #     {%
-    #         (data) => ({
-    #             type: "expr",
-    #             parentId: "assign",
-    #             child: data[0]
-                
-    #         })
-    #     %}
-
-# expr 
-#     -> expr opt expr 
-#         {%
-#             (data) => ({
-#                 type: "expr opt expr",
-#                 parentId: "expr",
-#                 operator: data[1],
-#                 left: data[0],
-#                 right: data[2]
-#             })
-#         %}
-#     | "(" expr opt expr ")" 
-#         {%
-#             (data) => ({
-#                 type: "( expr opt expr )",
-#                 parentId: "expr",
-#                 operator: data[2],
-#                 left: data[1],
-#                 right: data[3]
-#             })
-#         %}
-#     | id {% id %}
-#     | const {% id %}
-
 
 expr 
     -> expr opt expr 

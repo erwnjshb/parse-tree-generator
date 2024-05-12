@@ -8,7 +8,7 @@ var grammar = {
     {"name": "start", "symbols": ["assign"], "postprocess": 
         (data) => ({
             "name": "assign",
-            "class": "woman",
+            "class": "man",
             "children": data[0]
             
         })
